@@ -5,167 +5,118 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About Us | Nogitech</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Segoe+UI&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
-    /* Background Animation: subtle moving gradient overlay */
     body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #e0f7f7;
-      background: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background: url('https://images.unsplash.com/photo-1518770660439-4636190af475') no-repeat center center fixed;
       background-size: cover;
-      position: relative;
+      color: #fff;
       overflow-x: hidden;
     }
-    /* Animated gradient overlay */
-    body::before {
-      content: '';
-      position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: linear-gradient(270deg, #00e6e6, #005050, #00e6e6);
-      background-size: 600% 600%;
-      animation: gradientShift 20s ease infinite;
-      opacity: 0.3;
-      pointer-events: none;
-      z-index: 0;
-    }
-    @keyframes gradientShift {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-
     .overlay {
       background-color: rgba(0, 0, 0, 0.75);
-      padding: 50px 30px;
+      padding: 40px;
       min-height: 100vh;
-      position: relative;
-      z-index: 1;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
+      animation: fadeInBg 3s ease forwards;
+    }
+    @keyframes fadeInBg {
+      from {background-color: rgba(0,0,0,0);}
+      to {background-color: rgba(0,0,0,0.75);}
     }
     .container {
       max-width: 900px;
+      margin: auto;
     }
-
-    h1 {
+    header {
+      text-align: center;
       font-family: 'Orbitron', sans-serif;
-      font-size: 56px;
+      font-size: 64px;
+      letter-spacing: 6px;
       color: #00e6e6;
-      margin-bottom: 10px;
-      text-transform: uppercase;
-      letter-spacing: 3px;
+      margin-bottom: 30px;
+      text-shadow: 0 0 10px #00e6e6;
     }
     h2 {
-      font-family: 'Orbitron', sans-serif;
       color: #00e6e6;
       margin-top: 40px;
-      font-size: 28px;
-      border-bottom: 2px solid #00e6e6;
-      padding-bottom: 8px;
     }
-    p {
+    p, ul {
       font-size: 18px;
-      line-height: 1.9;
-      margin-top: 15px;
-      color: #b0ffff;
+      line-height: 1.8;
     }
     ul {
-      margin-top: 15px;
       margin-left: 20px;
-      color: #b0ffff;
     }
-    ul li {
-      margin-bottom: 8px;
+    .services-location {
+      margin-top: 30px;
+      font-size: 20px;
+      color: #00e6e6;
+      font-weight: bold;
     }
-
-    /* Contact Section */
     .contact {
       margin-top: 50px;
-      border-top: 2px solid #00e6e6;
-      padding-top: 25px;
+      border-top: 1px solid #00e6e6;
+      padding-top: 20px;
     }
-    .contact a {
+    a {
       color: #00e6e6;
       text-decoration: none;
-      font-weight: 600;
     }
-    .contact a:hover {
+    a:hover {
       text-decoration: underline;
     }
-
-    /* Social icons container */
     .socials {
-      margin-top: 20px;
+      margin-top: 15px;
       display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
     }
-
     .socials a {
-      display: inline-flex;
-      width: 32px;
-      height: 32px;
+      display: inline-block;
+      width: 24px;
+      height: 24px;
       fill: #00e6e6;
       transition: fill 0.3s ease;
     }
     .socials a:hover {
       fill: #00ffff;
     }
-    .socials svg {
-      width: 100%;
-      height: 100%;
-    }
-
-    /* Responsive */
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 36px;
-      }
-      h2 {
-        font-size: 22px;
-      }
-      .overlay {
-        padding: 30px 20px;
-      }
-    }
   </style>
 </head>
 <body>
   <div class="overlay">
     <div class="container">
-      <h1>About Nogitech</h1>
+      <header>NOGITECH</header>
 
+      <h1>About Nogitech</h1>
       <h2>Who We Are</h2>
       <p>
-        Nogitech is a visionary technology powerhouse co-founded by industry leaders Zane Ahmed (CEO) and John Peng, bridging innovation between Pakistan and China.
-        We stand at the forefront of tomorrow’s tech revolution, harnessing deep expertise and creative ingenuity to build solutions that transform the way people live and work.
-        Our multidisciplinary team unites advanced Chinese engineering precision with the dynamic spirit of Pakistani technological entrepreneurship.
-        From breakthrough E-commerce platforms and state-of-the-art GPU manufacturing to intelligent smartwatches, secure VPS hosting, sophisticated surveillance systems, and intricately crafted ship models,
-        Nogitech crafts smart, scalable, and reliable products that empower users globally.
-      </p>
-      <p>
-        We are more than a company; we are a movement towards smarter living, seamless connectivity, and intelligent security systems driven by AI.
-        Our mission is to deliver cutting-edge technology that is not only high-performing but also affordable and accessible,
-        ensuring that innovation has no boundaries and serves every community across continents.
+        Nogitech is a futuristic, innovative brand co-founded by Zane Ahmed (CEO) and John Peng in collaboration between Pakistan and China.
+        As a cutting-edge technology firm, Nogitech focuses on delivering excellence in a wide range of sectors including E-commerce, GPU manufacturing,
+        VPS and hosting services, smartwatches, server technology, ship models, and premium surveillance systems.
+        Our team blends the precision of Chinese engineering with Pakistani tech innovation to create advanced, affordable, and reliable tech solutions
+        for customers worldwide. We're not just a tech provider — we’re shaping the future of smart living, intelligent security, and efficient business tools.
       </p>
 
       <h2>What We Do</h2>
       <p>
         We specialize in:
-        <ul>
-          <li>Custom-designed E-commerce gadgets and infrastructure</li>
-          <li>Smartwatches and wearable technology</li>
-          <li>VPS (Virtual Private Servers) and cloud hosting services</li>
-          <li>GPU and high-performance hardware solutions</li>
-          <li>Advanced security cameras and monitoring systems</li>
-          <li>Precision ship model design and manufacturing</li>
-          <li>AI-integrated business solutions and automation</li>
-        </ul>
-        Proudly serving both Chinese and Pakistani markets, Nogitech delivers performance, security, and affordability to meet your every need.
-        Stay ahead with our AI-powered future.
+      </p>
+      <ul>
+        <li>Custom-designed E-commerce gadgets and infrastructure</li>
+        <li>Smartwatches and wearables</li>
+        <li>VPS (Virtual Private Servers) and hosting services</li>
+        <li>GPU and performance hardware solutions</li>
+        <li>High-quality security cameras and monitoring systems</li>
+        <li>Ship model design and manufacturing</li>
+        <li>AI-integrated solutions for businesses</li>
+      </ul>
+
+      <p class="services-location">
+        We provide services in Brazil, China, Indonesia, Korea, Pakistan, and worldwide.
       </p>
 
       <div class="contact">
@@ -176,36 +127,64 @@
         <p>WhatsApp (Korea): +821012341234</p>
         <p>WhatsApp (Indonesia): +6281234567890</p>
         <p>WhatsApp (Brazil): +5511987654321</p>
-        <p>Website: 
-          <a href="https://nogitech.store" target="_blank" rel="noopener">nogitech.store</a> | 
-          <a href="https://nogitech.org" target="_blank" rel="noopener">nogitech.org (USA)</a>
-        </p>
+        <p>Website: <a href="https://nogitech.store" target="_blank">nogitech.store</a></p>
 
-        <div class="socials" aria-label="Nogitech Social Media Links">
-          <a href="https://instagram.com/nogitech.inc" target="_blank" aria-label="Instagram">
-            <svg viewBox="0 0 24 24"><path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 2A3.75 3.75 0 004 7.75v8.5A3.75 3.75 0 007.75 20h8.5a3.75 3.75 0 003.75-3.75v-8.5A3.75 3.75 0 0016.25 4h-8.5zm4.25 3a4.25 4.25 0 110 8.5 4.25 4.25 0 010-8.5zm0 2a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5zm4.5-.5a.75.75 0 110 1.5.75.75 0 010-1.5z"/></svg>
+        <p>Socials:</p>
+        <div class="socials">
+          <!-- GitHub icon -->
+          <a href="https://github.com/nogitech" target="_blank" aria-label="GitHub" title="GitHub" >
+            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.29 9.42 7.86 10.96.58.11.79-.25.79-.56v-2.17c-3.2.7-3.88-1.55-3.88-1.55-.53-1.35-1.3-1.7-1.3-1.7-1.06-.73.08-.72.08-.72 1.17.08 1.79 1.2 1.79 1.2 1.04 1.78 2.73 1.27 3.4.97.11-.76.41-1.27.75-1.56-2.55-.29-5.23-1.27-5.23-5.66 0-1.25.44-2.28 1.16-3.09-.12-.29-.5-1.45.11-3.02 0 0 .95-.31 3.1 1.17a10.8 10.8 0 0 1 5.64 0c2.15-1.48 3.1-1.17 3.1-1.17.61 1.57.23 2.73.12 3.02.72.81 1.16 1.84 1.16 3.09 0 4.4-2.7 5.36-5.27 5.64.42.37.8 1.1.8 2.22v3.29c0 .31.21.68.8.56A10.53 10.53 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5z"/></svg>
           </a>
-          <a href="https://facebook.com/nogitech.inc" target="_blank" aria-label="Facebook">
-            <svg viewBox="0 0 24 24"><path d="M22 12c0-5.522-4.477-10-10-10S2 6.478 2 12c0 4.991 3.657 9.128 8.438 9.876v-6.987h-2.54v-2.89h2.54v-2.203c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562v1.876h2.773l-.443 2.89h-2.33v6.987C18.343 21.128 22 16.991 22 12z"/></svg>
+          <!-- Linktree icon -->
+          <a href="https://linktr.ee/nogitech.inc" target="_blank" aria-label="Linktree" title="Linktree">
+            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="10" fill="none" stroke="#00e6e6" stroke-width="2"/>
+              <path d="M8 8h4v8H8zM12 8h4v8h-4z" fill="#00e6e6"/>
+            </svg>
           </a>
-          <a href="https://linkedin.com/company/nogitech-inc" target="_blank" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24"><path d="M19 3A2 2 0 0121 5v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14zm-9 7v7H7v-7h3zm-1.5-2a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm11 9v-4a2 2 0 00-4 0v4h-3v-7h3v1.22a3.12 3.12 0 016 0V17h-2z"/></svg>
+          <!-- Instagram icon -->
+          <a href="https://instagram.com/nogitech" target="_blank" aria-label="Instagram" title="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#00e6e6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" >
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37a4 4 0 1 1-7.99 1.63 4 4 0 0 1 7.99-1.63z"/>
+              <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/>
+            </svg>
           </a>
-          <a href="https://twitter.com/nogitech_inc" target="_blank" aria-label="X (Twitter)">
-            <svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14.86 4.48 4.48 0 001.98-2.48 9.1 9.1 0 01-2.88 1.1 4.52 4.52 0 00-7.69 4.13 12.83 12.83 0 01-9.3-4.7 4.5 4.5 0 001.4 6.05 4.5 4.5 0 01-2.05-.57v.06a4.51 4.51 0 003.63 4.43 4.48 4.48 0 01-2.04.08 4.53 4.53 0 004.22 3.13 9.06 9.06 0 01-5.62 1.94A9.32 9.32 0 012 19.54a12.79 12.79 0 006.92 2.03c8.3 0 12.85-6.87 12.85-12.83 0-.2 0-.42-.02-.63A9.22 9.22 0 0023 3z"/></svg>
+          <!-- Facebook icon -->
+          <a href="https://facebook.com/nogitech" target="_blank" aria-label="Facebook" title="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#00e6e6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" >
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
           </a>
-          <a href="https://tiktok.com/@nogitech" target="_blank" aria-label="TikTok">
-            <svg viewBox="0 0 24 24"><path d="M12 2v13a4.5 4.5 0 01-4.5-4.5H6a6 6 0 006 6v3h3a6 6 0 006-6V7h-2v5a4 4 0 01-3-3.87V2z"/></svg>
+          <!-- LinkedIn icon -->
+          <a href="https://linkedin.com/company/nogitech" target="_blank" aria-label="LinkedIn" title="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#00e6e6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" >
+              <path d="M16 8a6 6 0 0 1 6 6v6h-4v-6a2 2 0 0 0-4 0v6h-4v-12h4v2"/>
+              <rect x="2" y="9" width="4" height="12"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
           </a>
-          <a href="https://youtube.com/nogitech" target="_blank" aria-label="YouTube">
-            <svg viewBox="0 0 24 24"><path d="M10 15l5.19-3L10 9v6zm12-3a3 3 0 01-3 3h-14a3 3 0 01-3-3 3 3 0 013-3h14a3 3 0 013 3z"/></svg>
+          <!-- X (Twitter) icon -->
+          <a href="https://twitter.com/nogitech" target="_blank" aria-label="X (Twitter)" title="X (Twitter)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#00e6e6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" >
+              <path d="M23 3a10.9 10.9 0 0 1-3.14.86 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+            </svg>
           </a>
-          <a href="https://wa.me/923019551776" target="_blank" aria-label="WhatsApp">
-            <svg viewBox="0 0 24 24"><path d="M20.52 3.48a11.36 11.36 0 00-16 0 11.45 11.45 0 000 16 11.37 11.37 0 0016 0 11.37 11.37 0 000-16zm-8.26 15.49a8.1 8.1 0 01-4.42-1.3l-3.01.8.8-3a8.06 8.06 0 1110.45-10.44 8.04 8.04 0 01-3.82 13.94zm4.21-5.66l-1.08-.54a1.29 1.29 0 00-1.2.12l-.57.43a.88.88 0 01-1.3-.57 4.24 4.24 0 01-.4-1.38 1.15 1.15 0 01.53-1.22l.71-.56a.8.8 0 00.32-1 4.1 4.1 0 00-2.24-2.55 3.29 3.29 0 00-3.43.75 9.75 9.75 0 00-2.24 3.13 8.17 8.17 0 003.08 10.5 9.18 9.18 0 001.3.55 2.64 2.64 0 002.27-.39l1.05-.81a1.53 1.53 0 00.56-1.36 4.6 4.6 0 00-1.16-2.48z"/></svg>
+          <!-- TikTok icon -->
+          <a href="https://tiktok.com/@nogitech" target="_blank" aria-label="TikTok" title="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor" >
+              <path d="M9 2v13.5A4.5 4.5 0 1 1 7.5 13V8h3V2H9z"/>
+              <path d="M15 6h3a4 4 0 1 1-4 4v-3a4 4 0 0 0 1-1z"/>
+            </svg>
           </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</body>
-</html>
+          <!-- YouTube icon -->
+          <a href="https://youtube.com/nogitech" target="_blank" aria-label="YouTube" title="YouTube">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#00e6e6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" >
+              <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-2C18.88 4 12 4 12 4s-6.88 0-8.59.42a2.78 2.78 0 0 0-1.95 2 29 29 0 0 0 0 5.16 2.78 2.78 0 0 0 1.95 2C5.12 14 12 14 12 14s6.88 0 8.59-.42a2.78 2.78 0 0 0 1.95-2 29 29 0 0 0 0-5.16z"/>
+              <polygon points="9.75 11.02 15.5 8.45 9.75 5.87 9.75 11.02"/>
+            </svg>
+          </a>
+          <!-- WhatsApp icon -->
+          <a href="https://wa.me/923019551776" target="_blank" aria-label="WhatsApp" title="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#00e6e6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" >
+              <path d="M21.41 20.59a10 10 0 
