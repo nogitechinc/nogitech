@@ -107,10 +107,10 @@
         <h2>Contact Us</h2>
         <p>Email: <a href="mailto:nogitechllc@gmail.com" style="color:#00e6e6;">nogitechllc@gmail.com</a></p>
         <p>WhatsApp (Main): +923019551776</p>
-        <p>WhatsApp (China): +8613711112233</p>
-        <p>WhatsApp (Korea): +821012341234</p>
-        <p>WhatsApp (Indonesia): +6281234567890</p>
-        <p>WhatsApp (Brazil): +5511987654321</p>
+        <p>CONTACT (China): +8613711112233</p>
+        <p>CONTACT (Korea): +821012341234</p>
+        <p>CONTACT (Indonesia): +6281234567890</p>
+        <p>CONTACT (Brazil): +5511987654321</p>
 
         <h2>Websites & Socials</h2>
         <ul class="sites-list">
